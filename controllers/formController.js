@@ -96,7 +96,7 @@ class FormController {
 
             const updatedForm = await FormDataModel.findByIdAndUpdate(
                 id,
-                { email, title, placeholder, fullname },
+                { text, number, email, title, password, fullname, date },
                 { new: true, runValidators: true }
             );
 
